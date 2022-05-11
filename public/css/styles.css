@@ -1,0 +1,503 @@
+
+/*====== Variables ======*/
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+  }
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+form.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #6666;
+    margin: 22px auto; 
+    
+}
+.form-group{
+    display: flex;
+    width: 80vw;
+    padding: 12px 0px;
+    flex-direction: column;
+}
+input.campus{
+    border-radius: 10px;
+    border: 1 solid #666;
+}
+article.type-usuario {
+    display: block;
+    padding: 1px 20px;
+    word-spacing: 5px;
+}
+.primary {
+    color: #000;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    position: relative;
+    border-radius: 0.5em;
+    background-color: #ebebeb;
+    border: 1px solid #e8e8e8;
+    transition: all 1.3s;
+    box-shadow: 5px 5px 1px #c5c5c5, -2px 2px 25px #ffffff;
+}
+.primary:hover{
+    background-color: #0022AA;
+    color: #ebebeb;
+    box-shadow: 0px 15px 20px rgba(46, 58, 229, 0.4);
+ transform: translateY(-7px);
+}
+.form-group input:hover{
+    outline: none;
+    border: 1px solid #39b54a;
+}
+article.hobbies{
+    display: grid;
+}
+span.activities {
+    position: relative;
+    left: 35px;
+    word-spacing: 15px;
+    padding: 5px;
+}
+.form-group-password {
+    display: flex;
+    padding: 15px 45px;
+    /* word-spacing: 35px; */
+    flex-wrap: wrap;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    
+}
+.product-img{
+    width: 100%;
+}
+.card{
+    width: 80vw;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 38px 28px 5px 0px rgba(0,0,0,0,4);
+
+}
+.last-visit h3{
+    font-size: 24px;
+    color: var(--gray);
+}
+.ofertas h3{
+    font-size: 24px;
+}
+p{
+    font-size: 14px;
+}
+div.top-header{
+    padding: 3%;
+}
+header{
+    background-color: #EAC926;
+}
+header div.logo{
+    width: 200px;
+    padding: 10px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#000;
+}
+header .form .input{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    color: #666;
+    font-size: 11px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: absolute;
+}
+header .form .submit{
+    position: relative;
+    left: 35%;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    color: #666;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: box-shadow 25;
+}
+header .form .submit:hover i{
+    transform: rotate(270deg);
+}
+header .form.submit:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+header div.top-header p{
+    position: relative;
+    padding: 10px;
+    left: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+header nav.main-navbar {
+    font-size: 12px;
+    display: none;
+}
+header nav.right-navbar{
+    position: absolute;
+    left: 35px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 10px 15px;
+    display: block;
+    margin: auto;
+    max-width: 44px;
+}
+.burger-menu{
+    position: relative;
+    bottom: 12px;
+    height: 45px;
+}
+p.price{
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 12px;
+}
+p.discount{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8px;
+}
+h3, .description{
+    color: #666;
+}
+.description{
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+section.banner img{
+    width:100%
+}
+
+/* .fa-solid.fa-magnifying-glass{
+
+} */
+/** MAIN **/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;
+    margin: 10px 0px;
+    width: 17%;
+}
+main section article img{
+    width: 100%;
+}
+main section article i, 
+ .discount{
+    color: #39b54a;
+}
+.main-article{
+    position: relative;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: -15px;
+}
+main section h3{
+    margin: 20px 0px
+}
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #6666;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/** FOOTER **/
+footer{
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+.container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.footer-data{
+    text-align: center;
+}
+.footer-data i{
+    color: #1259c3;
+    font-size: 2em;
+    padding: 10px 0;
+}
+.footer-data h3{
+    color: #666666;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px;
+}
+.footer-data p{
+    color: #666;
+    font-size: 12px;
+    font-weight: 300;
+}
+.sub-footer{
+    border-top: 1px solid #1259c3;
+    background-color: #ffffff;
+}
+
+
+.fa-solid.fa-credit-card, .fa-solid.fa-gift, .fa-solid.fa-user-shield{
+    color: rgb(26, 29, 158);
+    padding-left: 10px;
+    width: 2em ;
+    height: 2em;
+    font-size: 26px;
+    transition: all 1.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.fa-solid.fa-credit-card:hover, .fa-solid.fa-gift:hover, .fa-solid.fa-user-shield:hover{
+    background-color: #0022AA;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: rgba(46, 229, 157, 0.4);
+    border-radius: 25px;
+    transform: translateY(-7px);
+}
+
+#copyrigth{
+    text-align: left;
+    opacity: 25%;
+    padding-top: 20px;
+}
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: none;
+}
+/**login**/
+
+
+@media (min-width: 361px) {
+    main section article{ 
+        border: 1px solid #ebebeb;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        /* transition: transform 1s; */
+    }
+    .products article{
+        width: 40%;
+    }
+    main section article .description{
+        display: none;
+    }
+    .card:hover .description{
+        visibility: visible;
+    }
+    .card:hover i{
+        transform: rotate(270deg);
+    }
+    .card:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .card{
+        width: 45px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: box-shadow 25;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .form{
+        width: 34vw;
+        margin: 5px;
+    }
+    header div.logo{
+        width: 25vw;
+    }
+    header .form .input {
+        font-size: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    header .form .submit{
+        left: 52%;
+    }
+    header div.top-header p {
+        width: 33vw;
+        font-size: 12px;
+        padding: 0px;
+        top: 8px;
+    }
+    header nav.main-navbar {
+        font-size: 12px;
+        display: flex;
+        /* margin: 15px; */
+        position: relative;
+    }
+    nav ul {
+        display: flex;
+        /* border: 1px solid; */
+        width: 40%;
+        justify-content: space-between;
+    }
+    .row {
+        display: flex;
+        width: 73vw;
+        position: relative;
+        right: 4vw;
+    }
+    .col-12.col-lg-4 {
+        width: 24vw;
+        right: 0px;
+    }
+    
+    .footer-data{
+        text-align: center;
+        padding: 0px 3px;
+        width: 30vw;
+    }
+    .footer-data h3 {
+        font-size: 17px;
+        padding: 0px 15px;
+        margin: 5px;
+    }
+    .footer-data p{
+        padding: 2px 20px;
+    }
+    /**register**/
+    form.registro{
+        width: 80vw;
+        padding: 5px;
+    }
+    .form-group{
+        width: 55vw;
+    }
+    .primary{
+        left: 0vh;
+        top: 0px;
+        width: 25vh;
+    }
+    .form-group-password {
+        padding: 5px 0px;
+    }
+}
+    
+@media (min-width: 769px) {
+    .logo{
+        width: 50%;
+    }
+    .form{
+        width: 30%;
+    }
+    .products article{
+        width: 22%;
+    }
+    .burger-menu{
+        display: none;
+    }
+    
+    nav ul{
+        display: flex;
+        width: 33%;
+        justify-content: space-between;
+    }
+    header nav.main-navbar {
+        font-size: 12px;
+        display: flex;
+        position: relative;
+    }
+    header .form .input{
+        font-size: 18px;
+        width: 24vw;
+    }
+    header .form .submit{
+        left: 48%;
+    }
+    header div.top-header p{
+        width: 42%;
+        font-size: 20px;
+    }
+    .primary{
+        left: 0vh;
+        top: 0px;
+        width: 25vh;
+    }
+    .row{
+        width: 100vw;
+    }
+    .col-12.col-lg-4 {
+        width: 27.5vw;
+    }
+    .form-group-password {
+        padding: 5px 0px;
+    }
+    span.moving-pass {
+        padding: 5px 60px;
+        width: 33vw;
+    }
+    .buttoms {
+        padding: 15px 0px;
+    }
+
+}
