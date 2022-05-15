@@ -3,7 +3,9 @@
         <a href="/detalle/<%= producto.id %>">
     <img src="/images/<%= producto.imagen  %>" alt="Cafetera Moulinex" class="product-img">
     <div class="main-article">
-    <i class="fa-solid fa-truck"></i>
+     <div class="card-icon">
+        <i class="fa-solid fa-truck"></i>
+     </div>   
     <p class="price"> <%= producto.precio %>  </p>
     <p class="discount"><%= producto.descuento  %> </p>
     <h4 class="description"><%= producto.nombre %> </h4>
